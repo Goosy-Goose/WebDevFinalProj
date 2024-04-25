@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: LG-Cafe-Bold;
+    src: url(fonts/Louis\ George\ Cafe\ Bold.ttf);
+}
+@font-face {
+    font-family: LG-Cafe;
+    src: url(fonts/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+    font-family: LG-Cafe-Light;
+    src: url(fonts/Louis\ George\ Cafe\ Light.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: radial-gradient(circle, rgba(191,190,255,1) 0%, rgba(201,233,246,0) 57%),
+                      radial-gradient(circle, rgb(177, 251, 221) 0%, rgba(201,233,246,0) 57%),
+                      radial-gradient(circle, rgba(255, 158, 240, 0.588) 0%, rgba(201,233,246,0) 57%),
+                      radial-gradient(circle, rgba(115, 255, 229, 0.673) 0%, rgba(201,233,246,0) 57%), 
+                      linear-gradient(180deg, rgb(201,233,246,1) 0%, rgba(201,233,246,1) 100%);
+    background-attachment: fixed;
+    background-size: 50% 70%, 60% 80%, 70% 90%, 100%, 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat,no-repeat;
+    background-position: -30% 170%, -30% -100%, 150% -50%,-100% -300%, center;
+}
+
+#title{
+    text-align: center;
+    font-size: 7vh;
+    font-family: LG-Cafe-Bold;
+    color: rgb(13, 42, 104);
+}
+
+h2{
+    text-align: center;
+    font-size: 5vh;
+    font-family: LG-Cafe-Bold;
+    color: rgb(77, 100, 149);
+}
+
+h3 {
+    text-align: center;
+    font-size: 3vh;
+    font-family: LG-Cafe-Bold;
+    color: rgba(83, 108, 161, 0.791);
+}
+
+#title-underline{
+    align-self: center;
+    width: 50%;
+    border: 5px solid aquamarine;
+    border-radius: 3px;
+}
+
+#content-wrapper{
+    margin-inline: 5vw;
+    /* background-color: rgba(255, 228, 196, 0.454); */
+}
+
+.post-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.post-image{
+    width: 40vw;
+    height: auto;
+}
+
+.post-text{
+    width: 50vw;
+    font-family: LG-Cafe;
+    font-size: 5vh;
+}
+
+.comments{
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    text-align: left;
+    width: 40vw;
+    font-family: LG-Cafe;
+    color:rgba(0, 0, 0, 0.604);
+    font-size: 4vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.help{
+    margin-top: 50vh;
+    background-color: rgba(127, 255, 212, 0.335);
+    padding-block: 3vh;
+    padding-inline: 15vw;
+    font-family: LG-Cafe;
+    font-size: 3vh;
+}
+
+#help-header {
+    font-family: LG-Cafe-Bold;
+    font-size: larger;
+}
